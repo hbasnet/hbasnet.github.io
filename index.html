@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Resume</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css"
+        rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet" />
+    <style type="text/css">
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        li,
+        p {
+            font-family: Garamond, sans-serif
+        }
+
+        .resume {
+            background-color: #1f1f1f;
+            min-height: 100vh
+        }
+
+        .resume .main {
+            height: 100%;
+            width: 700px;
+            background-color: #fff;
+            padding: 0 25px;
+            margin: 0 auto
+        }
+
+        .resume .main .header {
+            border-bottom: 2px solid #ddd
+        }
+
+        .resume .main .header .page-title-container {
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 1px
+        }
+
+        .resume .main .header .page-title {
+            font-size: 20pt;
+            display: inline
+        }
+
+        .resume .main .header .page-title-first {
+            font-weight: 400
+        }
+
+        .resume .main .header .page-title-last {
+            font-weight: 400
+        }
+
+        .resume .main .header .header-icons {
+            text-align: center
+        }
+
+        .resume .main .header .header-icons .page-subhead {
+            margin: 1rem 15px;
+            display: inline
+        }
+
+        .resume .main .header .fa {
+            padding-right: 10px
+        }
+
+        .resume .main .indented {
+            padding-left: 40px
+        }
+
+        .resume .main .category-row {
+            padding-bottom: 2px
+        }
+
+        .resume .main .category-row .category {
+            margin-right: 10px;
+            padding-left: 5px;
+            padding-right: 10px;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd
+        }
+
+        .resume .main .category-row .category-row-title {
+            margin: .4rem 0
+        }
+
+        .resume .main .category-row .category-subtitle,
+        .resume .main .category-row .category-title {
+            display: inline;
+            margin-top: 10px;
+            margin-bottom: 5px
+        }
+
+        .resume .main .category-row .category-bullets {
+            margin-top: 5px
+        }
+
+        .resume .main .category-row li,
+        .resume .main .category-row p {
+            font-size: smaller
+        }
+
+        category:last-of-type category-item:last-of-type .category,
+        sidebar-category:last-of-type .category {
+            border-bottom: 1 !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important
+        }
+
+        .md-caption {
+            font-size: 14px;
+            letter-spacing: .020em;
+        }
+
+        .md-subhead {
+            font-size: 13px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script src="resume.js"></script>
+</head>
+
+<body ng-app="Resume" ng-cloak="">
+    <resume>
+        <resume-heading email="himalbasnet9@gmail.com" first-name="Himal" github="github.com/hbasnet" last-name="Basnet"
+            phone="989-906-5659">
+        </resume-heading>
+
+        <resume-body>
+
+            <category name="Education">
+                <category-item title="The University of Texas at Arlington, Arlington, TX (Dec 2020)">
+                    <li>Bachelor of Science in Computer Science</li>
+                    <li>GPA: 3.7</li>
+                </category-item>
+                <category-item title="Courses">
+                    <li> Computer Organization, Network Programming, Programming Languages</li>
+                    <li> Operating Systems, Artificial Intelligence I, Database System and File Structures</li>
+                </category-item>
+
+                <category name="Skills">
+                    <category-item title="Computer Skills">
+                        <li><strong>Programming Language: </strong> C++, C, Python, Java, JavaScript, MySQL, HTML, CSS
+                        </li>
+                        <li><strong>Frameworks: </strong>Django, React Native</li>
+                        <li><strong>Other Technologies: </strong> UNIX, Git, vim, React</li>
+                    </category-item>
+
+                    <resume-column flex="100">
+                        <category name="Work Experience">
+                            <category-item subtitle="Atomic Dev, INC (Aug 2020 - Present)"
+                                title="Software Engineering Intern">
+                                <li>Full-stack development with a focus on front-end web development in ReactJS.</li>
+                            </category-item>
+
+                            <category-item subtitle="CARE Inc (Jul 2020 - Present)" title="Full Stack Developer Intern">
+                                <li>Developing a website that fulfills the basic needs for dissemination of information
+                                    pertaining to company's research, aims, and future goals of diversification.</li>
+                                <li>Developing a flair of innovative idea generation and new markets to target during
+                                    COVID 19 for the CARE Inc. Team.</li>
+                            </category-item>
+
+                            <category-item subtitle="IT-Villa (Dec 2015 to May 2016)" title="Web Designer Intern">
+                                <li>Designed websites, and applications for various platforms like mobile, tablets, and
+                                    PC.</li>
+                                <li>Designed mocks and sliced HTML pages.</li>
+                            </category-item>
+                        </category>
+
+                        <category name="Projects">
+                            <category-item subtitle="Class Project" title="Blackjack">
+                                <li>Worked with a group of class students to design and develop Blackjack game using C++ and GTK.</li>
+                                <li>Used Boost library to handle communication between server and client.</li>
+                            </category-item>
+
+                            <category-item subtitle="Assignment project" title="Connect4">
+                                <li>Built Connect4 board game using python and applied the algorithims for depth limited minmax with alpha-beta pruning.</li>
+                            </category-item>
+
+                            <category-item subtitle="Personal project" title="Movie Rating App">
+                                <li>Created Movie rating app using React in front-end and backend restful API handeled by Django.</li>
+                            </category-item>
+                        </category>
+
+                        <category name="Extracurricular Activities">
+                            <category-item subtitle="Northlake College, Irving TX (Jan 2017 to Dec 2017)" title="The PI Math Assistant Program">
+                                <li>Helped college students to understand the essence of mathematics.</li>
+                            </category-item>
+                        </category>
+
+                        <category name="Honors and Awards">
+                            <category-item subtitle="(Jun 2017 to Present)" title="Phi Theta Kappa"></category-item>
+                            <category-item subtitle="(Spring 2019)" title="College of Engineering Dean's List"></category-item>
+                        </category>
+                </category>
+                </resume-column>
+        </resume-body>
+    </resume>
+    <br>
+</body>
+
+</html>

@@ -30,14 +30,14 @@
 
         .resume .main {
             height: 100%;
-            width: 700px;
+            width: 840px;
             background-color: #fff;
-            padding: 0 25px;
+            padding: 0 10px;
             margin: 0 auto
         }
 
         .resume .main .header {
-            border-bottom: 2px solid #ddd
+            border-bottom: 0.5px solid #ddd
         }
 
         .resume .main .header .page-title-container {
@@ -73,35 +73,35 @@
         }
 
         .resume .main .indented {
-            padding-left: 40px
+            padding-left: 10px
         }
 
         .resume .main .category-row {
-            padding-bottom: 2px
+            padding-bottom: 0px
         }
 
         .resume .main .category-row .category {
-            margin-right: 10px;
-            padding-left: 5px;
-            padding-right: 10px;
-            border-bottom: 1px solid #ddd;
-            border-right: 1px solid #ddd;
-            border-left: 1px solid #ddd
+            margin-right: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-bottom: 0.5px solid #ddd;
+            border-right: 0.5px solid #ddd;
+            border-left: 0.5px solid #ddd
         }
 
         .resume .main .category-row .category-row-title {
-            margin: .4rem 0
+            margin: 0 0
         }
 
         .resume .main .category-row .category-subtitle,
         .resume .main .category-row .category-title {
             display: inline;
-            margin-top: 10px;
-            margin-bottom: 5px
+            margin-top: 0px;
+            margin-bottom: 0px
         }
 
         .resume .main .category-row .category-bullets {
-            margin-top: 5px
+            margin-top: 0px
         }
 
         .resume .main .category-row li,
@@ -135,7 +135,7 @@
 
 <body ng-app="Resume" ng-cloak="">
     <resume>
-        <resume-heading email="himalbasnet9@gmail.com" first-name="Himal" github="github.com/hbasnet" last-name="Basnet"
+        <resume-heading email="himalbasnet9@gmail.com" first-name="Himal" github="github.com/hbasnet" linkedin="linkedin.com/in/himalbasnet" last-name="Basnet"
             phone="989-906-5659">
         </resume-heading>
 
@@ -150,9 +150,15 @@
                     <li>Associate in Science</li>
                     <li>GPA: 3.7</li>
                 </category-item>
+                <category-item title="Courses">
+                    <li> Compilers, Fundamentals of Machine Learning, Artificial Intelligence I, Data Mining</li>
+                    <li> Cloud Computing, Operating Systems, Computer Networking, Database System and File Structures</li>
+                    <li> Algorithims & Data Structures, Computer Organization, Programming Languages</li>
+                    <li> Linear Algebra, Engineering Probability, Discrete Structures, Calculus I, II, & III</li>
+                </category-item>
                 <category name="Skills">
                     <category-item title="Computer Skills">
-                        <li><strong>Programming Language: </strong> C++, C, Python, Java, JavaScript, SQL Server, HTML, CSS
+                        <li><strong>Programming Language: </strong> Python, C++, C, Java, JavaScript, SQL Server, HTML, CSS
                         </li>
                         <li><strong>Frameworks: </strong>Django, React Native</li>
                         <li><strong>Other Technologies: </strong> UNIX, Git, vim, React</li>
@@ -165,33 +171,43 @@
                                 <li>Full-stack development with a focus on front-end web development in ReactJS.</li>
                                 <li>Used Git to work and collaborate with team and it allows them to track and host different versions of project files.</li>
                             </category-item>
-
                             <category-item subtitle="CARE Inc (Jul 2020 - Aug 2020)" title="Full Stack Developer Intern">
-                                <li>Developing a website that fulfills the basic needs for dissemination of information
+                                <li>Developed a website that fulfills the basic needs for dissemination of information
                                     pertaining to company's research, aims, and future goals of diversification.</li>
-                                <li>Developing a flair of innovative idea generation and new markets to target during
+                                <li>Developed a flair of innovative idea generation and new markets to target during
                                     COVID 19 for the CARE Inc. Team.</li>
+                            </category-item>
+                            <category-item subtitle="IT-Villa (Dec 2015 to May 2016)" title="Web Designer Intern">
+                                <li>Designed websites, and applications for various platforms like mobile, tablets, and
+                                    PC.</li>
+                                <li>Designed mocks and sliced HTML pages.</li>
                             </category-item>
                         </category>
                         <category name="Projects">
-                            <category-item title="Blackjack">
+                            <category-item title="Blackjack Card Game">
                                 <li>Worked with a group of class students to design and develop Blackjack game using C++ and GTK.</li>
                                 <li>Used Boost.asio library to share game information between dealer as server and players as clients.</li>
                             </category-item>
-
-                            <category-item title="Connect4">
+                            <category-item title="Connect4 Board Game">
                                 <li>Built Connect4 board game using python and applied the algorithims for depth limited minmax with alpha-beta pruning.</li>
                                 <li>Evaluation function for depth limited is implemented to calculate the utility value.</li>
                             </category-item>
-
                             <category-item title="Movie Rating App">
                                 <li>Created Movie rating app using React in front-end and backend restful API handeled by Django.</li>
                                 <li>Learned to make a user authentication, to create a full CRUD and to create our own endpoints.</li>
                             </category-item>
+                            <category-item title="Donation Website">
+                                <li>Developed a website to donate goods with the help of Django.</li>
+                            </category-item>
                         </category>
-                        <category name="Honors and Awards">
-                            <category-item subtitle="(Jun 2017 to Present)" title="Phi Theta Kappa"></category-item>
-                            <category-item subtitle="(Spring 2019)" title="College of Engineering Dean's List"></category-item>
+                        <category name="Extracurricular Activities">
+                            <category-item subtitle="Northlake College, Irving TX (Jan 2017 to Dec 2017)" title="The PI Math Assistant Program">
+                                <li>Helped college students to understand the essence of mathematics.</li>
+                            </category-item>
+                            <category-item title="Honors and Awards">
+                                <li>Phi Theta Kappa (Jun 2017 to Present)</li>
+                                <li>College of Engineering Dean's List (Spring 2019)</li>
+                            </category-item>
                         </category>
                 </category>
                 </resume-column>
